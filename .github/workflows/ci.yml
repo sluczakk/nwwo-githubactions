@@ -11,13 +11,21 @@ jobs:
 
     steps:
       - name: Pobranie repozytorium
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+
+      - name: Ustawienie Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
 
       - name: Instalacja zależności
-        run: echo "Instalacja zależności..."
+        run: npm install
 
       - name: Budowanie projektu
-        run: echo "Budowanie aplikacji..."
+        run: npm run build
 
       - name: Uruchomienie testów
-        run: echo "Uruchamianie testów..."
+        run: npm test
+
+      - name: Wdrożenie aplikacji
+        run: echo "Wdrażam aplikacje..."
