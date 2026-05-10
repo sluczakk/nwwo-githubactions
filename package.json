@@ -1,0 +1,8 @@
+{
+  "name": "testowanie-githubactions",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "echo Build successful",
+    "test": "node --test"
+  }
+}
