@@ -1,0 +1,1 @@
+![CI Pipeline](https://github.com/sluczakk/nwwo-githubactions/actions/workflows/ci.yml/badge.svg)
